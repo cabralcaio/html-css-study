@@ -4,95 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Exercicio3/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <title>Login</title>
 </head>
 <body>
-    <img src="https://soulcodeacademy.org/assets/images/logo/light-logo.png" alt="SoulCode logo">
-    <h1>Bem vindo! Entre com seu email e senha.</h1>
-    <form>
-        <div>
-            <label for="campoEmail">Email</label><br>
-            <input name="campoEmail" type="email" placeholder="Digite seu email" required> <br>
+    <div id="cadastroInteiro">
+        <div class="cadastro">
+        <img src="https://soulcodeacademy.org/assets/images/logo/light-logo.png" alt="SoulCode logo">
+        <h1>Bem vindo! Entre com seu email e senha.</h1>
         </div>
-        <div>
-            <label for="campoSenha">Senha</label><br>
-            <input name="campoSenha" type="password" placeholder="Digite sua senha" required minlength="8"> <br><hr>
-        </div>
-        <div>
-            <button>Login</button><br>
-            <input type="checkbox" name="conectado">
-            <label for="conectado">Continuar conectado?</label> <br><br>
-        </div>
+        <form>
+            <div class="cadastro">
+                <label id="campoEmail" for="campoEmail">Email</label><br>
+                <input name="campoEmail" type="email" placeholder="Digite seu email" required><br><br>
+            </div>
+            <div class="cadastro">
+                <label id="campoSenha" for="campoSenha">Senha</label><br>
+                <input name="campoSenha" type="password" placeholder="Digite sua senha" required minlength="8"><br><br>
+            </div>
+            <div class="cadastro">
+                <button id="btnEntrar">Entrar</button><br><br>
+                <input type="checkbox" name="conectado">
+                <label for="conectado">Continuar conectado?</label>
+            </div>
+    </div>
     </form>
-    <div>
-        <h2>Engenharia de dados</h2>
-        <table border="1"style="border-collapse:collapse;">
-           <tbody>
-                <tr>
-                    <th>Custo</th>
-                    <td>Bolsa integral</td>
-                </tr>
-                <tr>
-                    <th>Prazo de inscrição</th>
-                    <td>até 03/10/22</td>
-                </tr>
-                <tr>
-                    <th>Início do curso</th>
-                    <td>17/10/22</td>
-                </tr>
-                <tr>
-                    <th>Duração</th>
-                    <td>12 semanas</td>
-                </tr>
-                <tr>
-                    <th>Horário de aula</th>
-                    <td>8h às 18h</td>
-                </tr>
-                <tr>
-                    <th>Formato de aula</th>
-                    <td>Online e ao vivo</td>
-                </tr>
-                <tr>
-                    <th>Idioma</th>
-                    <td>Português</td>
-                </tr>
-           </tbody>
-        </table> <hr>
-    </div>
-    <div>
-        <h2>Java Full Stack</h2>
-        <table border="1"style="border-collapse:collapse;">
-            <tbody>
-                 <tr>
-                     <th>Custo</th>
-                     <td>Bolsa integral</td>
-                 </tr>
-                 <tr>
-                     <th>Prazo de inscrição</th>
-                     <td>até 16/01/2023</td>
-                 </tr>
-                 <tr>
-                     <th>Início do curso</th>
-                     <td>30/01/2023</td>
-                 </tr>
-                 <tr>
-                     <th>Duração</th>
-                     <td>16 semanas</td>
-                 </tr>
-                 <tr>
-                     <th>Horário de aula</th>
-                     <td>8h às 18h</td>
-                 </tr>
-                 <tr>
-                     <th>Formato de aula</th>
-                     <td>Online e ao vivo</td>
-                 </tr>
-                 <tr>
-                     <th>Idioma</th>
-                     <td>Português</td>
-                 </tr>
-            </tbody>
-         </table>
-    </div>
+    <div id="tabelas">
+            <div class="borderDiv">
+                <h2>Engenharia de dados</h2>
+                <table cellpadding="10" style="border-collapse:collapse;">
+                <tbody>
+                        <tr>
+                            <th>Custo</th>
+                            <td id="bolsa">Bolsa integral</td>
+                        </tr>
+                        <tr>
+                            <th>Prazo de inscrição</th>
+                            <td>até 03/10/22</td>
+                        </tr>
+                        <tr>
+                            <th>Início do curso</th>
+                            <td>17/10/22</td>
+                        </tr>
+                        <tr>
+                            <th>Duração</th>
+                            <td>12 semanas</td>
+                        </tr>
+                        <tr>
+                            <th>Horário de aula</th>
+                            <td>8h às 18h</td>
+                        </tr>
+                        <tr>
+                            <th>Formato de aula</th>
+                            <td>Online e ao vivo</td>
+                        </tr>
+                        <tr>
+                            <th>Idioma</th>
+                            <td>Português</td>
+                        </tr>
+                </tbody>
+                </table>
+                <button>QUERO ME INSCREVER AGORA</button>
+            </div>
+            <div class="borderDiv">
+                <h2>Java Full Stack</h2>
+                <table cellpadding="10" style="border-collapse:collapse;">
+                    <tbody>
+                        <tr>
+                            <th>Custo</th>
+                            <td id="bolsa">Bolsa integral</td>
+                        </tr>
+                        <tr>
+                            <th>Prazo de inscrição</th>
+                            <td>até 16/01/2023</td>
+                        </tr>
+                        <tr>
+                            <th>Início do curso</th>
+                            <td>30/01/2023</td>
+                        </tr>
+                        <tr>
+                            <th>Duração</th>
+                            <td>16 semanas</td>
+                        </tr>
+                        <tr>
+                            <th>Horário de aula</th>
+                            <td>8h às 18h</td>
+                        </tr>
+                        <tr>
+                            <th>Formato de aula</th>
+                            <td>Online e ao vivo</td>
+                        </tr>
+                        <tr>
+                            <th>Idioma</th>
+                            <td>Português</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button>QUERO ME INSCREVER AGORA</button>
+            </div>
+    </div>    
 </body>
 </html>
