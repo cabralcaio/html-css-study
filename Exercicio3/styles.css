@@ -3,13 +3,13 @@ body {
     background-color: rgb(15, 99, 122); ;
     font-family: "Roboto", serif;
 }
-th {
+.my-table th {
     text-align: left;
 }
-td {
+.my-table td {
     text-align: right;
 }
-table {
+.my-table {
     justify-content: space-between;
 }
 label, h1 {
@@ -44,17 +44,29 @@ button {
 input{
     border-radius: 5px;
     border: none;
-    padding: 7px 148px 7px 2px;
+    padding: 7px 2px;
     background-color: fffff;
+    width: 100%;
 }
 #btnEntrar {
     background-color: #f8c100;
     border-radius: 5px;
     border: none;
-    padding: 7px 141px;
+    padding: 7px 2px;
     font-weight: 600;
+    width: 100%;
 }
-#cadastroInteiro {
-   text-align: center;
-   margin-bottom: 40px;
+.cadastroheader {
+    text-align: center;
+}
+form {
+    padding: 30px 30px;
+    width: 300px;
+    margin: auto;
+}
+.cadastro {
+    text-align: left;
+}
+#checkbox {
+    width: 20px;
 }
